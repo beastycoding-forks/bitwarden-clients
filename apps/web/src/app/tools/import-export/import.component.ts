@@ -6,13 +6,13 @@ import Swal, { SweetAlertIcon } from "sweetalert2";
 
 import { ModalService } from "@bitwarden/angular/services/modal.service";
 import { I18nService } from "@bitwarden/common/abstractions/i18n.service";
-import { ImportService } from "@bitwarden/common/abstractions/import.service";
 import { LogService } from "@bitwarden/common/abstractions/log.service";
 import { PlatformUtilsService } from "@bitwarden/common/abstractions/platformUtils.service";
 import { PolicyService } from "@bitwarden/common/abstractions/policy/policy.service.abstraction";
-import { ImportOption, ImportType } from "@bitwarden/common/enums/importOptions";
 import { PolicyType } from "@bitwarden/common/enums/policyType";
-import { ImportError } from "@bitwarden/common/importers/import-error";
+import { ImportService } from "@bitwarden/importers/abstractions/import.service";
+import { ImportOption, ImportType } from "@bitwarden/importers/enums/import-options";
+import { ImportError } from "@bitwarden/importers/importers/import-error";
 
 import { FilePasswordPromptComponent } from "./file-password-prompt.component";
 
